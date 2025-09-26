@@ -5,7 +5,7 @@ The automation fetches the newest LinkedIn job posts (based on your search filte
 
 > **At a glance:** RSS → HTTP (GET) → OpenAI → Google Sheets
 
-![Scenario overview – replace with your screenshot](images/latest-jobs-flow.png)
+![Scenario overview](images/latest-jobs-flow.png)
 
 ### What you’ll build
 - A reusable Make.com scenario that:
