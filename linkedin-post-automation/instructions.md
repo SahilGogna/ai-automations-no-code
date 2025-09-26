@@ -3,7 +3,7 @@ The purpose of this document is to provide a clear overview and step-by-step exp
 ### Workflow Overview
 This automation takes unprocessed post ideas from Airtable, generates LinkedIn content using OpenAI, logs the results in Google Docs, publishes to LinkedIn, and updates Airtable to mark completion.
 
- ![alt text](images/image.png)
+ ![alt text](project-images/image.png)
 
 ## The flow ensures:
 - No duplicate posts
@@ -25,11 +25,11 @@ Integration with Make.com
 ## 2. Workflow Steps
 Step 1: Airtable (Search Records)
 
-![alt text](images/image.png)
+![alt text](project-images/image.png)
 
- ![alt text](images/image-2.png)
+ ![alt text](project-images/image-2.png)
  
- ![alt text](images/image-3.png)
+ ![alt text](project-images/image-3.png)
 
 Module: Airtable → Search Records
 Action: Finds all rows where is_processed = FALSE
@@ -40,7 +40,7 @@ Module: Tools → Set Multiple Variables
 Action: Extracts variables (post_id, Notes, Type, etc.) from Airtable
 Purpose: Prepares the data to send to OpenAI
  
-![alt text](images/image-4.png)
+![alt text](project-images/image-4.png)
 
 
 ## Step 3: OpenAI (Content Generation)
@@ -65,12 +65,33 @@ Steps to Generate OpenAI API Key and Add to Make.com
 •	A pop-up will appear asking for your OpenAI API Key.
 •	Paste the key you copied from OpenAI.
  
-![alt text](images/image-5.png)
+```text
+You are a LinkedIn writing assistant who specializes in crafting engaging posts.  
+I will provide you with context from our MyStrivera community sessions.  
+
+Your task is to write a LinkedIn post that:  
+- Shares my learnings as a job seeker, told from a first-person, learner’s perspective.  
+- Uses a storytelling tone with natural, conversational language (no corporate jargon).  
+- Starts with a strong hook that grabs attention in the first 1–2 lines.  
+- Summarizes the key lessons from each session in a concise way (no more than 200–220 words total).  
+- Ends with a clear call-to-action that invites interaction (e.g., asking readers about their own learnings).  
+- Avoids emojis.  
+
+The goal is to update my LinkedIn audience in a way that feels human, relatable, and easy to read.  
+
+Give me the linkedin post that can directly be copy pasted without any changes. 
+
+Here's the type of sessions {{3.type}}
+
+For each session, here are the notes: 
+{{3.notes}}
+
+```
 
 ## Step 4: Router (Branching the Workflow)
 The router splits the output into two paths:
 
- ![alt text](images/image-6.png)
+ ![alt text](project-images/image-6.png)
 
 ### Path 1 Google Docs (Insert Content)
 Module: Google Docs → Insert a Paragraph
@@ -87,9 +108,9 @@ Purpose: Keeps a record of every post generated
 •	After authentication, the connection will be saved as a reusable Google Drive connection in Make.com.
 •	You can now select your Google Drive folder and Docs files inside the module.
  
- ![alt text](images/image-7.png)
+ ![alt text](project-images/image-7.png)
 
- ![alt text](images/image-8.png)
+ ![alt text](project-images/image-8.png)
 
 ### Path 2 LinkedIn (Post Content)
 Module: LinkedIn → Create a User Text Post
@@ -102,19 +123,19 @@ Create LinkedIn Connection
 4.	Review the requested permissions (Make.com needs access to post on your behalf and manage content).
 5.	Click Allow to grant permissions.
 
-![alt text](images/image-9.png)
+![alt text](project-images/image-9.png)
  
 ## Step 5: Airtable (Update Record)
 Module: Airtable → Update Record
 Action: Sets is_processed = TRUE for the post after it is successfully published.
 
-![alt text](images/image-10.png)
+![alt text](project-images/image-10.png)
 
 Purpose: Prevents reposting and allows new unprocessed entries to flow in the next automation run.
 
-![alt text](images/image-11.png)
+![alt text](project-images/image-11.png)
 
-![alt text](images/image-12.png)
+![alt text](project-images/image-12.png)
 
 ## 3. End-to-End Flow Diagram
 The automation flow is:
