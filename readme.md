@@ -7,10 +7,10 @@ A collection of no-code / low-code automations using Make.com + OpenAI + other t
 
 ## 🚀 Current Automations
 
-| Name | Description |
-|---|---|
-| **LinkedIn Latest Jobs** | Fetch latest job listings from LinkedIn → enrich via OpenAI → append to Google Sheets |
-| **LinkedIn Post Automation** | (Add a short description of what this module does) |
+| Name | Description | Authors | Platform
+|---|---|---|---|
+| **LinkedIn Latest Jobs** | Fetch latest job listings from LinkedIn → enrich via OpenAI → append to Google Sheets | [@SahilGogna](https://github.com/SahilGogna) | make.com |
+| **LinkedIn Post Automation** | Fetch the db for context and post on LinkedIn | [@SahilGogna](https://github.com/SahilGogna), [@SahibSingh](https://github.com/sahibseehra) | make.com |
 
 > More automations will be added over time — this repo is your central place for all active “AI + no-code” workflows.
 
@@ -27,34 +27,13 @@ ai-automations-no-code/
 ├── linkedin-post-automation/
 │   ├── (json, instructions, assets)
 │   └── …
-├── readme.md  ← (this file)
-└── LICENSE (if applicable)
+└── readme.md
 ```
 
 - Each folder represents one automation blueprint + instructions.
 - JSON files are importable into Make.com (or similar).
 - `instructions.md` within each folder details step-by-step setup for that automation.
 - Screenshots or visuals should be placed in each automation folder (e.g. `images/` subfolder).
-
----
-
-## 🛠️ How It Works (Overview)
-
-Here’s the typical flow for automations in this repo (e.g. **LinkedIn Latest Jobs**):
-
-1. **RSS / Trigger**  
-   Pull job or post URLs from an RSS feed, webhook, or other source.
-
-2. **HTTP / Fetch Details**  
-   Make an HTTP request to the URL from step 1 to get the full payload (HTML / JSON).
-
-3. **OpenAI Module**  
-   Use a GPT model to parse the raw payload into a clean JSON object containing fields (e.g. title, company, location, date, link).
-
-4. **Destination / Storage**  
-   Save or route the parsed job/post info to Google Sheets, databases, or downstream tools.
-
-While each automation can differ slightly, this pattern (Trigger → Fetch → Enrich → Store) is common across all.
 
 ---
 
@@ -93,13 +72,6 @@ You’re free to tweak it, add more fields, or adjust formatting — just ensure
 
 ---
 
-## 📜 License & Contributions
-
-- (Optional) Specify your license, e.g. MIT.  
-- Contributions are welcome — if you build a new automation, add its folder + instructions + blueprint.
-
----
-
 ## 🙏 Acknowledgments
 
-Thanks to openAI, Make.com, and the broader no-code community for inspiring these automations.
+Thanks to openAI, Make.com, and the broader no-code community for inspiring these automations. Special thanks to all direct contributors.
