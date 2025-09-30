@@ -7,10 +7,10 @@ A collection of no-code / low-code automations using Make.com + OpenAI + other t
 
 ## 🚀 Current Automations
 
-| Name | Description | Authors | Platform
-|---|---|---|---|
-| **LinkedIn Latest Jobs** | Fetch latest job listings from LinkedIn → enrich via OpenAI → append to Google Sheets | [@SahilGogna](https://github.com/SahilGogna) | make.com |
-| **LinkedIn Post Automation** | Fetch the db for context and post on LinkedIn | [@SahilGogna](https://github.com/SahilGogna), [@SahibSingh](https://github.com/sahibseehra) | make.com |
+| Name | Description | Authors | Folder | Platform
+|---|---|---|---|---|
+| **LinkedIn Latest Jobs** | Fetch latest job listings from LinkedIn → enrich via OpenAI → append to Google Sheets | [@SahilGogna](https://github.com/SahilGogna) | [View Folder](https://github.com/SahilGogna/ai-automations-no-code/tree/main/linkedin-latest-jobs) | make.com |
+| **LinkedIn Post Automation** | Fetch the db for context and post on LinkedIn | [@SahilGogna](https://github.com/SahilGogna), [@SahibSingh](https://github.com/sahibseehra) | [View Folder](https://github.com/SahilGogna/ai-automations-no-code/tree/main/linkedin-post-automation) | make.com |
 
 > More automations will be added over time — this repo is your central place for all active “AI + no-code” workflows.
 
