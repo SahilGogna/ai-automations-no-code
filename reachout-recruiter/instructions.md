@@ -121,7 +121,7 @@ Pull your resume text from **Google Docs** for OpenAI to use.
    - **By Dropdown:** Pick your resume file  
    - **Or By URL/ID:** Paste the resume link
 
-   ![Google Docs Setup](images/step5.png.png)
+   ![Google Docs Setup](<images/step5.png .png>)
 
 ---
 
@@ -140,7 +140,7 @@ Pull your resume text from **Google Docs** for OpenAI to use.
 - **Prompt type:** Text prompt
 - **Prompt:** Use the template below and map fields from previous steps.
 
-![OpenAI Setup](images/step6.png.png)
+![OpenAI Setup](<images/step6.png .png>)
 
 #### Prompt Template
 
@@ -223,7 +223,7 @@ Test to confirm:
 
 ### 10. End-to-End Flow Diagram
 
-![Recruiter Outreach Flow](images/end-to-endflow.png)
+![Recruiter Outreach Flow](<images/end-to-end flow.png>)
 
 
 ---
@@ -231,9 +231,7 @@ Test to confirm:
 ### 11. Author & Demo
 
 **Author:** : 
-[@kamal-preet-0209](https://github.com/kamal-preet-0209)
-
-[@sizakadri210](https://github.com/sizakadri210)
+[@kamal-preet-0209](https://github.com/kamal-preet-0209) & [@sizakadri210](https://github.com/sizakadri210)
 
 
-**Demo Video:**[project_overview](https://drive.google.com/file/d/1kj2HARNOssmGrNdFOQxXW6wg1CPt1yP9/view?usp=sharing)
+**Demo Video:**[click here](https://drive.google.com/file/d/1kj2HARNOssmGrNdFOQxXW6wg1CPt1yP9/view?usp=sharing)
