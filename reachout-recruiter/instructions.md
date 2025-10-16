@@ -61,7 +61,7 @@ Extract the recruiter’s full name from Google Sheets so **Hunter.io** can use 
    - **Variable name:** Full Name  
    - **Variable value:** Map the recruiter’s name column from Google Sheets
 
-   ![Set Variables](step2.png)
+   ![Set Variables](images/step2.png)
 
 3. Save the module.
 
@@ -84,7 +84,7 @@ Hunter.io requires both first and last names for accurate lookup.
    get(split(Recruiter Name; space); 2)
    ```
 
-   ![Split Name](step3.png)
+   ![Split Name](images/step3.png)
 3. Save your changes.
 
 ---
@@ -105,7 +105,7 @@ Use **Hunter.io** to fetch recruiter emails.
    - **Last Name:** Map from variable  
    - **Full Name:** (optional) map Full Name too
 
-   ![Hunter.io Module](step4.png)
+   ![Hunter.io Module](images/step4.png)
 
 3. **Run once** to test and verify that emails are returned.
 
@@ -121,7 +121,7 @@ Pull your resume text from **Google Docs** for OpenAI to use.
    - **By Dropdown:** Pick your resume file  
    - **Or By URL/ID:** Paste the resume link
 
-   ![Google Docs Setup](<step5.png .png>)
+   ![Google Docs Setup](images/step5.png.png)
 
 ---
 
@@ -140,7 +140,7 @@ Pull your resume text from **Google Docs** for OpenAI to use.
 - **Prompt type:** Text prompt
 - **Prompt:** Use the template below and map fields from previous steps.
 
-![OpenAI Setup](<step6.png .png>)
+![OpenAI Setup](images/step6.png.png)
 
 #### Prompt Template
 
@@ -188,7 +188,7 @@ After generating the HTML email, split the flow with a **Router**.
 - Map **OpenAI → Result** as appended text  
 - Save and test
 
-![Google Docs Archive](step7a.png)
+![Google Docs Archive](images/step7a.png)
 
 #### Route 2 — Send via Gmail
 - Add **Gmail → Send Email**
@@ -198,7 +198,7 @@ After generating the HTML email, split the flow with a **Router**.
   - **Content:** OpenAI result (enable HTML mode)
   - **Attachment:** Resume (from Google Docs)
 
-![Gmail Setup](step7b.png)
+![Gmail Setup](images/step7b.png)
 
 ---
 
@@ -217,13 +217,13 @@ Test to confirm:
 - Email updates correctly
 - The same row is updated (not duplicated)
 
-![Update Sheet](step8.png)
+![Update Sheet](images/step8.png)
 
 ---
 
 ### 10. End-to-End Flow Diagram
 
-![Recruiter Outreach Flow](<end-to-end flow.png>)
+![Recruiter Outreach Flow](images/end-to-endflow.png)
 
 
 ---
@@ -236,5 +236,4 @@ Test to confirm:
 [@sizakadri210](https://github.com/sizakadri210)
 
 
-**Demo Video:** https://discord.com/channels/@me/1329226495629201420/1422346673870471282
-
+**Demo Video:**[project_overview](https://drive.google.com/file/d/1kj2HARNOssmGrNdFOQxXW6wg1CPt1yP9/view?usp=sharing)
