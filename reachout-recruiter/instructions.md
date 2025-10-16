@@ -1,4 +1,6 @@
-## Recruiter Outreach Automation Documentation
+## ## Recruiter Outreach Automation Documentation
+Automate your recruiter outreach process — from job listing detection to personalized email delivery — using Make.com and OpenAI.
+
 
 This automation helps you automatically send personalized recruiter outreach emails using **Make.com**, **Hunter.io**, **OpenAI**, **Gmail**, **Google Docs**, and **Google Sheets**.  
 It detects new recruiter email from job postings , generates a tailored outreach email, sends it automatically, and logs everything for tracking and documentation.
@@ -44,11 +46,7 @@ Set up a **Google Sheets “Watch New Rows”** module as the scenario trigger.
    - **Table contains headers:** Yes
 
    ![Google Sheet Module](images/step1.png)
-   
-
-
-
-5. Save your module. It will now automatically capture new job postings.
+   5. Save your module. It will now automatically capture new job postings.
 
 ---
 
@@ -62,8 +60,7 @@ Extract the recruiter’s full name from Google Sheets so **Hunter.io** can use 
    - **Variable value:** Map the recruiter’s name column from Google Sheets
 
    ![Set Variables](images/step2.png)
-
-3. Save the module.
+   3. Save the module.
 
 ---
 
@@ -85,7 +82,7 @@ Hunter.io requires both first and last names for accurate lookup.
    ```
 
    ![Split Name](images/step3.png)
-3. Save your changes.
+   3. Save your changes.
 
 ---
 
@@ -106,8 +103,7 @@ Use **Hunter.io** to fetch recruiter emails.
    - **Full Name:** (optional) map Full Name too
 
    ![Hunter.io Module](images/step4.png)
-
-3. **Run once** to test and verify that emails are returned.
+   3. **Run once** to test and verify that emails are returned.
 
 ---
 
@@ -121,7 +117,7 @@ Pull your resume text from **Google Docs** for OpenAI to use.
    - **By Dropdown:** Pick your resume file  
    - **Or By URL/ID:** Paste the resume link
 
-   ![Google Docs Setup](<images/step5.png .png>)
+   ![Google Docs Setup](./images/step5.png)
 
 ---
 
@@ -140,8 +136,7 @@ Pull your resume text from **Google Docs** for OpenAI to use.
 - **Prompt type:** Text prompt
 - **Prompt:** Use the template below and map fields from previous steps.
 
-![OpenAI Setup](<images/step6.png .png>)
-
+![OpenAI Setup](./images/step6.png)
 #### Prompt Template
 
 ```html
@@ -221,9 +216,9 @@ Test to confirm:
 
 ---
 
-### 10. End-to-End Flow Diagram
+### 10. step 9: End-to-End Flow Diagram
 
-![Recruiter Outreach Flow](<images/end-to-end flow.png>)
+![Recruiter Outreach Flow](./images/end-to-end-flow.png)
 
 
 ---
@@ -234,4 +229,6 @@ Test to confirm:
 [@kamal-preet-0209](https://github.com/kamal-preet-0209) & [@sizakadri210](https://github.com/sizakadri210)
 
 
-**Demo Video:**[click here](https://drive.google.com/file/d/1kj2HARNOssmGrNdFOQxXW6wg1CPt1yP9/view?usp=sharing)
+**Demo Video:** [click here](https://drive.google.com/file/d/1kj2HARNOssmGrNdFOQxXW6wg1CPt1yP9/view?usp=sharing)
+
+**Folder:** [View Folder](./recruiter-outreach-automation)
