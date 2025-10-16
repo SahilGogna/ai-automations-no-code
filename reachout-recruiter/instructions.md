@@ -43,10 +43,12 @@ Set up a **Google Sheets “Watch New Rows”** module as the scenario trigger.
    - **Sheet Name:** Select (e.g., Sheet1)  
    - **Table contains headers:** Yes
 
-   ![Google sheet Module](../images/step1.png)
+   ![Google Sheet Module](images/step1.png)
+   
 
 
-4. Save your module. It will now automatically capture new job postings.
+
+5. Save your module. It will now automatically capture new job postings.
 
 ---
 
