@@ -1,4 +1,4 @@
-## ## Recruiter Outreach Automation Documentation
+## Recruiter Outreach Automation Documentation
 Automate your recruiter outreach process — from job listing detection to personalized email delivery — using Make.com and OpenAI.
 
 
@@ -117,8 +117,7 @@ Pull your resume text from **Google Docs** for OpenAI to use.
    - **By Dropdown:** Pick your resume file  
    - **Or By URL/ID:** Paste the resume link
 
-   ![Google Docs Setup](./images/step5.png)
-
+   ![Google Docs Setup](<images/step5.png .png>)
 ---
 
 ### 7. Step 6: Configure OpenAI Email Generation
@@ -136,7 +135,7 @@ Pull your resume text from **Google Docs** for OpenAI to use.
 - **Prompt type:** Text prompt
 - **Prompt:** Use the template below and map fields from previous steps.
 
-![OpenAI Setup](./images/step6.png)
+![OpenAI Setup](<images/step6.png .png>)
 #### Prompt Template
 
 ```html
@@ -218,8 +217,7 @@ Test to confirm:
 
 ### 10. step 9: End-to-End Flow Diagram
 
-![Recruiter Outreach Flow](./images/end-to-end-flow.png)
-
+![Recruiter Outreach Flow](<images/end-to-end flow.png>)
 
 ---
 
@@ -231,4 +229,3 @@ Test to confirm:
 
 **Demo Video:** [click here](https://drive.google.com/file/d/1kj2HARNOssmGrNdFOQxXW6wg1CPt1yP9/view?usp=sharing)
 
-**Folder:** [View Folder](./recruiter-outreach-automation)
